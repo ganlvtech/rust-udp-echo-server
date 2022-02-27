@@ -10,7 +10,7 @@ fn main() {
     loop {
         match UdpSocket::bind(listen) {
             Ok(socket) => {
-                println!("UDP Echo Server is listening on {}", listen);
+                println!("UDP echo Server is listening on {}", listen);
                 let mut error_number = 0;
                 loop {
                     match socket.recv_from(&mut buf) {
